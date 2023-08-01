@@ -29,15 +29,15 @@ body{
   color: white;
 
 } 
-.nav__logo {
+/* .nav__logo {
   font-family: 'Coca Cola ii', sans-serif;
   letter-spacing: 3px;
   font-weight: 100;
-}
+} */
 .canva{
   display: block;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  z-index:900 ;
 }
 
 .nav{
@@ -52,7 +52,7 @@ body{
   align-items: center;
   grid-template-columns: repeat(2, max-content);
   
-  
+  z-index: 500;
 }
 .nav:target{
   --state-close: scale(1);
@@ -60,6 +60,7 @@ body{
   --state-menu:translate(0);
  
 }
+
 .nav__logo{
   font-size: 2rem;
   z-index: 300;
@@ -99,7 +100,6 @@ body{
   align-content: center;
   gap: 30px;
   letter-spacing: 3px;
-  
   border: none;
   transform: var(--state-menu);
   transition: .4s transform;
@@ -114,4 +114,10 @@ body{
   text-decoration: none;
  
   
+}
+
+/* main */
+.regalos{
+  width: 100%;
+  height: 100vh;
 }
