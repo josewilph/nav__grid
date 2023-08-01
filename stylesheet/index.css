@@ -34,6 +34,11 @@ body{
   letter-spacing: 3px;
   font-weight: 100;
 }
+.canva{
+  display: block;
+  position: absolute;
+  top: 0;
+}
 
 .nav{
 
