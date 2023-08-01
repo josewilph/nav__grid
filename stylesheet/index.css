@@ -22,7 +22,7 @@ body{
 
 .hero{
   background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.2)), 
-  url('../pictures/hero.jpg');
+  url('../pictures/paraguas.jpg');
   background-size: cover;
   min-height: 500px;
   height: 100vh;
@@ -93,6 +93,7 @@ body{
   display: grid;
   align-content: center;
   gap: 30px;
+  letter-spacing: 3px;
   
   border: none;
   transform: var(--state-menu);
