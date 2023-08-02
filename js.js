@@ -36,7 +36,7 @@ $(function()
 	  setTimeout(() => {
 		const campo=document.querySelector("#campo");
 		campo.style.display="block";
-		campo.textContent="ya estas vieja...";
+		campo.textContent="ya estas viejita...";
 		console.log(campo);
 	  }, 3500);
 	}
