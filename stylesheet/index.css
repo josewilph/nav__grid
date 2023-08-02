@@ -3,11 +3,11 @@
 @import url("https://fonts.googleapis.com/css?family=Sacramento");
                 
 *{
-  margin: 0;
+  margin: 0 ;
   padding: 0;
   box-sizing: border-box;
   
-
+  /* asta aquiiii */
 }
 
 body{
@@ -20,12 +20,18 @@ body{
   max-width: 1200px;
   overflow: hidden;
 }
+header{
+  width: 100%;
 
+  height: 100vh;
+  position: fixed;
+  
+}
 .hero{
   background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.2)), 
   url('../pictures/atardecer.jpg');
   background-size: cover;
-  min-height: 500px;
+
   height: 100vh;
   
   color: white;
@@ -38,7 +44,6 @@ body{
 } */
 .canva{
   display: block;
-  position: fixed;
   z-index:900 ;
 }
 
@@ -48,13 +53,11 @@ body{
   --state-open: scale(1);
   --state-menu:translate(-100%);
   padding: 40px 0;
- 
   display: grid;
   justify-content: space-between;
   align-items: center;
   grid-template-columns: repeat(2, max-content);
-  
-  z-index: 500;
+
 }
 .nav:target{
   --state-close: scale(1);
@@ -69,6 +72,8 @@ body{
 .nav__logo{
   font-size: 2rem;
   z-index: 300;
+  color: white;
+  
 }
 .nav__links{
   /* display: none; */
@@ -97,9 +102,8 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   bottom: 0;
-  padding: 0;
   padding-left: 5%;
   display: grid;
   align-content: center;

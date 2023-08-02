@@ -22,12 +22,11 @@
 </head>
 <body>
     
-   <header class="hero"> 
+   <header > 
 
-        
         <nav class="nav container" id="nav">
             <h2 class="nav__logo">Jpeña</h2>
-
+             
             <ul class="nav__links">
 
                 <li class="nav__item">
@@ -57,10 +56,14 @@
 
 
         </nav>
-        <!-- <canvas class="canva" id="canvas"></canvas> -->
+     
    </header> 
 
     <main>
+      <div class="hero">
+        <canvas class="canva" id="canvas"></canvas> 
+      </div>
+      
         <div class="regalos container">
             
               <div class="velacontainer">
@@ -82,7 +85,7 @@
 
               </div>
 
-            <h1 class="letrav">
+            <h1 class="letrav" id="campo">
                 Pide Un Deseo...<br/>... Y apaga la vela
             </h1>
             
@@ -94,31 +97,13 @@
     </main>
 
 
-    <script src="js.js"></script>
-      <script>
-        $(function()
-    {
-      var flame = $('#flame');
-      var txt = $('h1');
     
-      flame.on(
-      {
-        click: function()
-        {
-          flame.removeClass('burn').addClass('puff');
-          $('.smoke').each(function()
-          {
-            $(this).addClass('puff-bubble');
-          });
-          $('#glow').remove();
-          txt.html("Feliz <b>Cumpleaños</b><br> Peña...").delay(2750).fadeOut(300);
-          $('#candle').animate(
-          {
-            //'opacity': '.5'
-          }, 100);
-        }
-      })   
-    });
+      <script>
+      
+
+
+    
     </script>
+    <script src="js.js"></script>
 </body>
 </html>
