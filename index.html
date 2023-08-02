@@ -14,11 +14,16 @@
                 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 
+<script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     
-    <header class="hero">
+   <header class="hero"> 
+
         
         <nav class="nav container" id="nav">
             <h2 class="nav__logo">Jpeña</h2>
@@ -52,15 +57,68 @@
 
 
         </nav>
-        <canvas class="canva" id="canvas"></canvas>
-    </header>
+        <!-- <canvas class="canva" id="canvas"></canvas> -->
+   </header> 
+
     <main>
-        <div class="regalos">
+        <div class="regalos container">
             
+              <div class="velacontainer">
+                <div id="glow" class="glow"></div>
+                <div class="candle" id="candle">
+                    <div class="stripe"></div>
+                    <div class="stripe"></div>
+                    <div class="stripe"></div>
+                    <div class="stripe"></div>
+                    <div class="stripe"></div>
+                    <div id="top">
+                      <div class="smoke"></div>
+                      <div class="smoke"></div>
+                      <div class="smoke"></div>
+                      <div id="knot"></div>
+                      <div id="flame" class="burn"></div>
+                    </div>
+                </div>
+
+              </div>
+
+            <h1 class="letrav">
+                Pide Un Deseo...<br/>... Y apaga la vela
+            </h1>
+            
+
+         
+
         </div>
+        
     </main>
 
 
     <script src="js.js"></script>
+      <script>
+        $(function()
+    {
+      var flame = $('#flame');
+      var txt = $('h1');
+    
+      flame.on(
+      {
+        click: function()
+        {
+          flame.removeClass('burn').addClass('puff');
+          $('.smoke').each(function()
+          {
+            $(this).addClass('puff-bubble');
+          });
+          $('#glow').remove();
+          txt.html("Feliz <b>Cumpleaños</b><br> Peña...").delay(2750).fadeOut(300);
+          $('#candle').animate(
+          {
+            //'opacity': '.5'
+          }, 100);
+        }
+      })   
+    });
+    </script>
 </body>
 </html>
