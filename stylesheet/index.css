@@ -22,19 +22,15 @@ body{
 }
 header{
   width: 100%;
-  height: 100vh;
-
- 
+  height: fit-content;
   position: fixed;
-  z-index: 99;
+  z-index: 9999;
 }
 .hero{
   background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.2)), 
   url('../pictures/atardecer.jpg');
   background-size: cover;
-
   height: 100vh;
-  
   color: white;
   display: grid;
   grid-template-rows: max-content ;
@@ -397,4 +393,11 @@ main{
 
 
 
-/* vela */
+/* serenata */
+.serenata{
+  width: max-content;
+  height: 100vh;
+display: grid;
+
+}
+

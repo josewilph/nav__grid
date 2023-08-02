@@ -1,15 +1,15 @@
-const amburguesa= document.querySelector(".nav__hamburguer");
+// const amburguesa= document.querySelector(".nav__hamburguer");
 
-amburguesa.addEventListener('click', function(){
-    document.getElementsByTagName("html")[0].style.overflow= "hidden";
-    console.log("el boton a sido precionado");
-})
+// amburguesa.addEventListener('click', function(){
+//     document.getElementsByTagName("html")[0].style.overflow= "hidden";
+//     console.log("el boton a sido precionado");
+// })
 
-const cerrar= document.querySelector(".nav__close");
-cerrar.addEventListener('click', function(){
-    document.getElementsByTagName("html")[0].style.overflow= "auto";
-    console.log("el boton a sido cerrado");
-})
+// const cerrar= document.querySelector(".nav__close");
+// cerrar.addEventListener('click', function(){
+//     document.getElementsByTagName("html")[0].style.overflow= "auto";
+//     console.log("el boton a sido cerrado");
+// })
 
 
 $(function()
